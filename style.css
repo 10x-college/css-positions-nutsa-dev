@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    
+    background-color: #19A1AE;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #2E3349;
+    height: 100vh; 
+    width: 100%;
+    overflow: hidden; 
+    position: relative;
+}
+
+
+.card {
+    width: 350px;
+    height: 374px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    
+}
+
+.portrait {
+    position: absolute;
+    top: 148px; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+}
+
+.card-pattern {
+    background-color: #41CBD3;
+    
+}
+
+.name-and-age {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+.name-and-age span {
+    font-weight: 400;
+    color: #6B7082;
+    margin-left: 8px;
+}
+
+.city {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.details {
+    
+    height: 69px;
+    width: 252px;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.amount {
+   
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.property {
+    font-size: 10px;
+    color: #6B7082;
+    display: inline-block; 
+    margin-top: 8px;
+  
+}  
+
+.item {
+  position: absolute;
+  width: 56px;
+  margin-top: 25px;
+}
+
+
+.followers {margin-left: 49px; }
+.likes     {margin-left: 161px; }
+.photos    {margin-left: 261px; }
+
+
+
+/* Responsive */
+
+@media (max-width: 375px) {
+    .card {
+        width: 90%; 
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .details {
+        width: 100%; 
+    }
+
+    .item {
+        width: 30%; 
+    }
+
+    .followers { margin-left: 5%; }
+    .likes     { margin-left: 35%; }
+    .photos    { margin-left: 65%; }
+}
